@@ -44,7 +44,7 @@ body{
         url(images/pattern-background-mobile.svg) no-repeat ,
         url() var(--Pale__blue) ;
        
-        background-size: 650px 200px ;
+        background-size: 650px 230px ;
 }
 
 
@@ -178,7 +178,7 @@ button:hover{
         background: 
             url(images/pattern-background-desktop.svg) no-repeat ,
             url() var(--Pale__blue) ;
-        background-size: 1440px 300px ;
+        background-size: 1440px 350px ;
            
     }
     
