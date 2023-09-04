@@ -19,10 +19,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-    background: 
-        url(images/pattern-background-mobile.svg)  no-repeat ,
-        url() var(--Pale__blue) ;
-    width: 375px;
+   
 }
 
 p,
@@ -42,6 +39,14 @@ body{
 
 /* ---------------------- Product ----------------- */
 
+body{
+    background: 
+        url(images/pattern-background-mobile.svg) no-repeat ,
+        url() var(--Pale__blue) ;
+       
+        background-size: 650px 200px ;
+}
+
 
 .product__summary{
     display: flex;
@@ -52,7 +57,8 @@ body{
     border-radius: 20px;
     overflow: hidden;
     width: 330px;
-    border: solid;
+    background-color: white;
+    /* border: solid; */
     
 }
 
@@ -60,6 +66,7 @@ body{
 .img__hero{
     width: 330px;
     height: 160px;
+    /* margin-top: 10px; */
     flex-shrink: 0; 
 }
 
@@ -160,5 +167,66 @@ button:hover{
 }
 
 .attribution{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Dark__blue);
+    
+}
 
+@media(min-width:650px) and (max-width:1440px){
+    body{
+        background: 
+            url(images/pattern-background-desktop.svg) no-repeat ,
+            url() var(--Pale__blue) ;
+        background-size: 1440px 300px ;
+           
+    }
+    
+    .product__summary{
+        width: 450px;
+        margin: 102px auto;
+    }
+
+    .img__hero{
+        width: 450px;
+        height: 220px;
+    }
+    .product__text{
+        margin: 40px;
+        margin-top: 30px;
+    }
+
+    .product__text h1{
+        font-size: 2.8rem;  
+    }
+
+    .product__text p {
+        font-size: 1.6rem;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .product__price{
+        margin-bottom: 30px;
+    }
+
+    .product__price p{
+        font-size: 1.6rem;
+        margin-right: 100px;
+    }
+
+    .product__price p span{
+        font-size: 1.6rem;
+    }
+
+    .product__price a{
+        font-size: 1.4rem;
+    }
+
+    button{
+        width:375px;
+    }
+    .button__cancel{
+        margin-top:10px;
+    }
 }
