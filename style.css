@@ -1,0 +1,148 @@
+:root{
+    /* --------------- Primary colors ------------- */
+    --Pale__blue: hsl(225, 100%, 94%);
+    --Bright__blue: hsl(245, 75%, 52%);
+
+    /* ---------------- Neutral colors ---------------- */
+    --Very__pale__blue: hsl(225, 100%, 98%);
+    --Desaturated__blue: hsl(224, 23%, 55%);
+    --Dark__blue: hsl(223, 47%, 23%);
+
+    /* ----------------- Font ------------------------* */
+    --font__family: 'Red Hat Display', sans-serif;
+    --font__size : 1.5rem;
+
+}
+
+/* -------------------- General ------------------------- */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+p,
+h1,
+h2,
+span,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font__family);
+    /* background: 
+        url(images/pattern-background-mobile.svg) center no-repeat ,
+        url() var(--Pale__blue) ; */
+    
+        
+    
+    
+}
+
+
+/* ---------------------- Product ----------------- */
+
+
+.product__summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 330px;
+    border: solid;
+    
+}
+
+
+.img__hero{
+    width: 330px;
+    height: 160px;
+    flex-shrink: 0; 
+}
+
+.product__text{
+    margin: 30px;
+    margin-top: 15px;
+
+}
+
+.product__text h1{
+    text-align: center;
+    color: var(--Dark__blue);
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.product__text p{
+    margin: 16px 0px;
+    font-size: var(--font__size);
+    text-align: center;
+    font-weight: 500;
+    color: var(--Desaturated__blue);
+}
+
+.product__price{
+    background-color: var(--Very__pale__blue);
+    border-radius: 11px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.product__price img{
+    height: 48px;
+    width: 48px;
+    margin: 18px;
+    flex-shrink: 0;
+}
+
+.product__price p {
+    color: var(--Dark__blue);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-top: 21px;
+
+}
+
+.product__price p span {
+    color: var(--Desaturated__blue);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.product__price a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Bright__blue);
+    margin: 31px 0px;
+}
+
+button {
+    width: 280px;
+    background-color: var(--Bright__blue);
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 11px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.button__proceed{
+    display: block;
+    margin: 15px 0px;
+    
+}
+
+.button__cancel{
+
+}
+
+.attribution{
+
+}
